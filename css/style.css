@@ -19,7 +19,31 @@ body {
     list-style: none;
 }
 
+.container {
+    width: 1470px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
        /*------logo-------*/
+       .header {
+          padding-top: 25.5px;
+       }
+
 .logo-web {
     font-family: 'Raleway', sans-serif;
 font-style: normal;
@@ -95,7 +119,10 @@ color: var(--title-color);
 
 /*--------------------------HERO----------------------*/
 .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background: #2E2F42
+    
 }
 
 .hero-title {
@@ -104,6 +131,7 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #FFFFFF;
+margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -129,6 +157,7 @@ cursor: pointer;
 
 /*--------------------About---------------------------*/
 .about {
+    padding-top: 120px  ;
 }
 
 .about-list {
@@ -154,6 +183,7 @@ color: var(--paragraph-color);
 }
 /*--------------------Info---------------------------*/
 .info {
+   padding-bottom: 120px;
 }
 
 .info-title {
@@ -163,17 +193,20 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--title-color);
+margin-top: 120px;
 }
 
 .info-list {
 }
 
 .info-item {
-
+   margin-top: 72px;
 }
 /*--------------------Team---------------------------*/
 .team {
    background-color: #F4F4FD;
+   padding-top:120px;
+   padding-bottom: 120px;
 }
 
 .team-title {
@@ -191,6 +224,7 @@ color: var(--title-color);
 
 .team-item {
     background-color: #FFFFFF;
+    margin-top: 72px;
 }
 
 .team-name {
@@ -211,6 +245,8 @@ color: var(--paragraph-color);
 /*--------------------footer---------------------------*/
 .footer {
     background: #2E2F42;
+    padding-top: 101.5px;
+    padding-bottom: 189.5px;
 }
 
 .footer-logo-web {
@@ -245,6 +281,7 @@ color: #F4F4FD;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #F4F4FD;
+margin-top: 17.5px;
 }
 
 
@@ -272,6 +309,8 @@ color: var(--title-color);
 
 .hero-portfolio {
    list-style: none;
+   padding-top: 96px;
+   padding-bottom: 120px;
 }
 
 .btn-list {
@@ -321,7 +360,9 @@ color: var(--title-color);
 }
 
 .image-list {
+    margin-top: 72px;
     list-style: none
+    
 }
 
 .panel-list {
