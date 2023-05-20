@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    width: 1470px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -76,6 +76,10 @@ color: var(--title-color);
 }
      
 /*-----------------navigation------------*/
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container{
    display: flex;
    align-items: center;
@@ -89,6 +93,7 @@ color: var(--title-color);
 .header-nav {
    display: flex;
    align-items: center;
+   padding: 24px;
 }
 
 .header-link:hover {
@@ -143,18 +148,20 @@ color: var(--title-color);
 
 /*--------------------------HERO----------------------*/
 .hero {
-    
+
 }
 
 .hero-container{
     display: flex;
+    
 }
 
-.hero-wraper {
+.hero-container{
     background-color: var(--title-color);
-    padding: 188px 472px;  
+    padding: 188px;  
     flex-grow: 1;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .hero-title {
@@ -164,10 +171,15 @@ letter-spacing: 0.02em;
 text-align: center;
 color: var(--background-color);
 margin-bottom: 48px;
+max-width: 496px;
 }
 
 .hero-btn {
     font-family: 'Roboto', sans-serif;
+    display: block;
+    height: 56px;
+    border: none; 
+    border-radius: 4px;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -177,6 +189,8 @@ letter-spacing: 0.04em;
 color: var(--background-color);
 background-color: var(--btn-color);
 cursor: pointer;
+min-width: 169px;
+align-content: center;
 }
 
 .hero-btn:hover {
@@ -189,11 +203,16 @@ cursor: pointer;
 
 /*--------------------About---------------------------*/
 .about {
-    padding-top: 120px  ;
+     
+}
+
+.title-specials {
+    margin-bottom: 8px;
 }
 
 .about-container{
     display: flex;
+    padding-top: 120px
 }
 
 .about-list {
@@ -235,7 +254,7 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--title-color);
-margin-top: 120px;
+margin-top: 72px;
 }
 
 .info-list {
@@ -250,7 +269,7 @@ margin-top: 120px;
 }
 /*--------------------Team---------------------------*/
 .team {
-   background-color: var(--background-color);
+   background-color: #F4F4FD;
    padding-top:120px;
    padding-bottom: 120px;
 }
@@ -269,6 +288,9 @@ margin-bottom: 72px;
 
 }
 
+.card-wrap {
+    padding: 32px 16px;
+}
 .team-list {
     display: flex;
     gap: 24px;
@@ -279,6 +301,7 @@ margin-bottom: 72px;
     background-color: var(--background-color);
     margin-top: 72px;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -287,6 +310,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--title-color);
+text-align: center;
 }
 
 .team-profesion {
@@ -294,13 +318,13 @@ color: var(--title-color);
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--paragraph-color);
+text-align: center;
 }
 
 /*--------------------footer---------------------------*/
 .footer {
     background: var(--title-color);
-    padding-top: 101.5px;
-    padding-bottom: 189.5px;
+    padding: 100px;
 }
 
 .footer-logo-web {
@@ -313,7 +337,8 @@ display: flex;
 align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--title-color);
+color: var(--btn-color);
+display: inline-block;
 }
 
 .footer-logo-studio {
@@ -327,7 +352,7 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--text-color);
-
+display: inline-block;
 }
 
 .footer-text {
@@ -335,7 +360,7 @@ color: var(--text-color);
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--text-color);
-margin-top: 17.5px;
+margin-top: 16px;
 max-width: 264px;
 }
 
@@ -372,11 +397,13 @@ color: var(--title-color);
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 
 .btn-item {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    border: none; 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -386,8 +413,6 @@ color: var(--title-color);
     letter-spacing: 0.04em;
     color: var(--btn-color);
     cursor: pointer;
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
 }
 
 .btn-panel {
@@ -403,20 +428,31 @@ color: var(--title-color);
     color: var(--btn-color);
     background-color:#F4F4FD;
     cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .btn-panel:hover {
     color: var(--background-color);
     background-color:  #404BBF;
+    border: 1px solid transparent;
 }
 
 .btn-panel:focus {
     color: var(--background-color);
     background-color:  var(--hover-color); 
+    border: 1px solid transparent;
 }
 
 /*---------Images--------*/
 .hero-image {
+}
+
+.image-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .image-list {
@@ -447,7 +483,8 @@ color: var(--title-color);
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-color: var(--title-color);
+color: var(--title-color); 
+margin-bottom: 8px; 
 }
 
 .imge-paragraph {
